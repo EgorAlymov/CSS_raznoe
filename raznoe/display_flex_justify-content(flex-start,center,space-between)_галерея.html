@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+        <h2>Галерея 1</h2>
+        <div class="gallery gallery-1">
+            <img src="img/photo-1.jpeg" alt="">
+            <img src="img/photo-2.jpeg" alt="">
+            <img src="img/photo-3.jpeg" alt="">
+        </div>
+        <h2>Галерея 2</h2>
+        <div class="gallery gallery-2">
+            <img src="img/photo-4.jpeg" alt="">
+            <img src="img/photo-5.jpeg" alt="">
+            <img src="img/photo-6.jpeg" alt="">
+        </div>
+        <h2>Галерея 3</h2>
+        <div class="gallery gallery-3">
+            <img src="img/photo-7.jpeg" alt="">
+            <img src="img/photo-8.jpeg" alt="">
+            <img src="img/photo-9.jpeg" alt="">
+        </div>
+</html>
+
+<style>
+   h2 {
+    margin: 0;
+}
+
+.gallery {
+    box-shadow: 5px 5px 10px grey;
+    padding: 20px;
+    margin-bottom: 20px;
+    flex-direction: row;
+}
+/* по левому краю-начало строки флексбокса */
+.gallery-1 {
+    justify-content: flex-start;
+}
+/* по центру*/
+.gallery-2 {
+    justify-content: center ;
+}
+/* от края докрая  с равным расстоянием между */
+.gallery-3 {
+    justify-content: space-between;
+}
+</style>
+
+
+
+

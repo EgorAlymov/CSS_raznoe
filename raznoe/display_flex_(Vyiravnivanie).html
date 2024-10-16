@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Галерея</h2>
+    <div class="gallery gallery-1">
+        <img src="img/photo-1.jpeg" alt="">
+        <img src="img/photo-2.jpeg" alt="">
+        <img src="img/photo-3.jpeg" alt="">
+        <img src="img/photo-4.jpeg" alt="">
+        <img src="img/photo-5.jpeg" alt="">
+        <img src="img/photo-6.jpeg" alt="">
+        <img src="img/photo-7.jpeg" alt="">
+        <img src="img/photo-8.jpeg" alt="">
+        <img src="img/photo-9.jpeg" alt="">
+    </div>  
+</body>
+
+
+<style>
+h2 {
+    margin: 0;
+}
+
+.gallery {
+    box-shadow: 5px 5px 10px grey;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-height: 300px;
+    display: flex;
+    align-items: center; 
+}
+
+.gallery > img {
+    width: 200px;
+}
+
+.gallery > img:nth-of-type(-n+3) { 
+    align-self: flex-start; 
+}
+
+.gallery > img:nth-of-type(n+7) { 
+    align-self: flex-end; 
+}
+</style>
+
+</html>
+
+

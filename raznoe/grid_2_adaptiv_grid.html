@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <header class="header">
+    <h1>CSS Grid Layout</h1>
+    <h2>With @support flexbox fallback.</h2>
+  </header>
+  
+  <div class="grid-wrapper">
+    <div class="grid-item item-1"></div>
+    <div class="grid-item item-2"></div>
+    <div class="grid-item item-3"></div>
+    <div class="grid-item item-4"></div>
+    <div class="grid-item item-5"></div>
+</div>
+</html>
+
+<style>
+.item-1 {
+    background-color: rgb(161, 48, 48);
+}
+
+.item-2 {
+    background-color: rgb(49, 163, 68);
+}
+
+.item-3 {
+    background-color: rgb(34, 32, 180);
+}
+
+.item-4 {
+    background-color: rgb(207, 219, 29);
+}
+
+.item-5 {
+    background-color: rgb(175, 52, 165);
+}
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 100px 100px 100px;
+    /* Но если задать одной 2fr, то она займет в два раза больше места.
+    grid-template-columns: 2fr 1fr;
+      */
+}
+</style>
+
+
+
+
